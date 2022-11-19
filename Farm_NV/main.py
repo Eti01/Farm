@@ -38,11 +38,7 @@ for i in range(random.randrange(10,20)):
         scale = 0.4,
         collider = "mesh")
 
-player = FirstPersonController(
-    model = "Idle.fbx",
-    scale = 0.02,
-    collider = "mesh"
-)
+player = FirstPersonController()
 player.cursor.texture = 'assets/textures/crosshair.png'
 player.cursor.rotation = 0
 player.cursor.scale = 0.025
@@ -51,8 +47,6 @@ player.z = 0
 player.y = 100
 player.x = 0
 
-camera.z = -400
-camera.y = 60
 
 window.fullscreen = True
 
